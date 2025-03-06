@@ -43,7 +43,7 @@ function Accordian() {
                 className="title"
               >
                 <h3>{dataItem.question}</h3>
-                <span>+</span>
+                <span>{selected === dataItem.id ? "-" : "+"}</span>
               </div>
               {enableMultiSelection
                 ? multiple.indexOf(dataItem.id) !== -1 && (
